@@ -1,0 +1,74 @@
+<root>
+	<schedule year="2020" month="2" day="10" zeroWeekN="0">
+		<time value="17:45 - 20:30">
+			<day value="Понедельник" num="1">
+				<subject value="Иностранный язык">
+					<classroom value="6412">
+						<lesson type="Практика" weeks="3, 7, 11, 15"/>
+					</classroom>
+				</subject>
+				<subject value="Web-технологии">
+					<classroom value="1337">
+						<lesson type="Лабораторные" weeks="5, 9, 13, 17"/>
+					</classroom>
+					<classroom value="1329">
+						<lesson type="Лекции" weeks="2, 6, 10, 14"/>
+					</classroom>
+				</subject>
+			</day>
+
+			<day value="Вторник" num="2">
+				<subject value="Физические основы информ-телекоммуникац систем">
+					<classroom value="1209">
+						<lesson type="Лекции" weeks="1, 3, 7, 11, 15"/>
+					</classroom>
+					<classroom value="4307">
+						<lesson type="Лабораторные" weeks="5, 9, 13, 17"/>
+					</classroom>
+				</subject>
+				<subject value="ПЯВУ">
+					<classroom value="6143">
+						<lesson type="Практика" weeks="2, 6, 10, 14"/>
+						<lesson type="Лабораторные" weeks="4, 8, 12, 16"/>
+					</classroom>
+				</subject>
+			</day>
+
+			<day value="Среда" num="3">
+				<subject value="Философия">
+					<classroom value="6322">
+						<lesson type="Лекции" weeks="3, 5, 7"/>
+						<lesson type="Зачет" weeks="9, 11"/>
+					</classroom>
+				</subject>
+				<subject value="Вычислительная геометрия">
+					<classroom value="6455">
+						<lesson type="Лекции" weeks="2, 6, 10, 14"/>
+					</classroom>
+					<classroom value="6340">
+						<lesson type="Лабораторные" weeks="4, 8, 12, 16"/>
+					</classroom>
+				</subject>
+			</day>
+
+			<day value="Четверг" num="4">
+				<subject value="ПЯВУ">
+					<classroom value="6336">
+						<lesson type="Лекции" weeks="Нечетные" exp="x%2!=0"/>
+					</classroom>
+				</subject>
+			</day>
+
+			<day value="Пятница" num="5">
+				<subject value="Математика">
+					<classroom value="6155">
+						<lesson type="Лекции" weeks="1, 3, 5, 7, 9, 11"/>
+					</classroom>
+					<classroom value="1209">
+						<lesson type="Практика" weeks="Четные" exp="x%2==0"/>
+					</classroom>
+				</subject>
+			</day>
+		</time>
+	</schedule>
+</root>

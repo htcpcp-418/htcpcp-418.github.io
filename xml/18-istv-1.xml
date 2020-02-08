@@ -1,0 +1,83 @@
+<root>
+	<schedule year="2020" month="2" day="10" zeroWeekN="0">
+		<time value="17:45 - 20:30">
+			<day value="Понедельник" num="1">
+				<subject value="Методы и средства защиты информации">
+					<classroom value="4201">
+						<lesson type="Лекции" weeks="1, 5, 9, 13, 17"/>
+					</classroom>
+					<classroom value="4403">
+						<lesson type="Лабораторные 1 подгруппа" weeks="2, 6, 10, 14"/>
+						<lesson type="Лабораторные 2 подгруппа" weeks="4, 8, 12, 16"/>
+					</classroom>
+				</subject>
+				<subject value="Теория вероятностей и математическая статистика">
+					<classroom value="4301">
+						<lesson type="Лекции" weeks="3, 7, 11, 15"/>
+					</classroom>
+				</subject>
+			</day>
+
+			<day value="Вторник" num="2">
+				<subject value="Базы данных">
+					<classroom value="1353">
+						<lesson type="Лекции" weeks="1, 5, 9, 13, 17"/>
+					</classroom>
+					<classroom value="1337">
+						<lesson type="Лабораторные 1 подгруппа" weeks="2, 6, 10, 14"/>
+						<lesson type="Лабораторные 2 подгруппа" weeks="3, 7, 11, 15"/>
+					</classroom>
+				</subject>
+				<subject value="Теория вероятностей и математическая статистика">
+					<classroom value="4307">
+						<lesson type="Практика" weeks="4, 8, 12, 16"/>
+					</classroom>
+				</subject>
+			</day>
+
+			<day value="Среда" num="3">
+				<subject value="Разработка сетевых приложений">
+					<classroom value="4307">
+						<lesson type="Лекции" weeks="Нечетные" exp="x%2!=0"/>
+						<lesson type="Лабораторные" weeks="Нечетные" exp="x%2!=0"/>
+					</classroom>
+				</subject>
+			</day>
+
+			<day value="Четверг" num="4">
+				<subject value="Теория информации, данные, знания">
+					<classroom value="1210">
+						<lesson type="Лекции" weeks="1, 3, 7, 11, 15"/>
+					</classroom>
+					<classroom value="4311">
+						<lesson type="Практика" weeks="2, 6, 10, 14"/>
+						<lesson type="Лабораторные 1 подгруппа" weeks="4, 8, 12, 16"/>
+						<lesson type="Лабораторные 2 подгруппа" weeks="5, 9, 13, 17"/>
+					</classroom>
+				</subject>
+			</day>
+
+			<day value="Пятница" num="5">
+				<subject value="Архитектура информационных систем">
+					<classroom value="1353">
+						<lesson type="Лекции" weeks="1, 3, 7, 11, 15"/>
+					</classroom>
+					<classroom value="4307">
+						<lesson type="Лабораторные 1 подгруппа" weeks="2, 6, 10, 14"/>
+						<lesson type="Лабораторные 2 подгруппа" weeks="4, 8, 12, 16"/>
+					</classroom>
+				</subject>
+			</day>
+		</time>
+		<time value="">
+			<day value="Суббота" num="6">
+				<subject value="БЖД">
+					<classroom value="6347">
+						<lesson type="Лекции" comment="11:35 - 13:10" weeks="2, 4, 6, 8"/>
+						<lesson type="Практика" comment="13:40 - 17:00" weeks="2, 6"/>
+					</classroom>
+				</subject>
+			</day>
+		</time>
+	</schedule>
+</root>

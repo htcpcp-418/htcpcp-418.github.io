@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+	<h1>Создание xml</h1>
+	<p class="comm">Имя xml файла задает итоговый URL.</p>
+	<p>Например, для файла <span class="comm">ИМЯ_ФАЙЛА</span>.xml будет соответствующий URL: .../#<span class="comm">ИМЯ_ФАЙЛА</span></p>
+	<p>
+	  XML файл содержит в себе тег <span class="comm">"root"</span> и при том только один.
+	  В свою очередь тег <span class="comm">"root"</span> содержит тег <span class="comm">"schedule"</span> и при том только один.
+	  Тег <span class="comm">"schedule"</span> имеет следующие атрибуты:
+	</p>
+	<ol>
+	  <li><span class="comm">"year" - обязательный</span> атрибут, который хранит год (число) первой учебной недели;</li>
+	  <li><span class="comm">"month" - обязательный</span> атрибут, который хранит месяц (число) первой учебной недели;</li>
+	  <li><span class="comm">"day" - обязательный</span> атрибут, который хранит дату (число) понедельника первой учебной недели;</li>
+	  <li><span class="comm">"zeroWeekN" - обязательный</span> атрибут, который хранит смещение номера первой учебной недели.</li>
+	</ol>
+	<p>
+	  В свою очередь тег <span class="comm">"schedule"</span> содержит теги <span class="comm">"time"</span>.
+	  Тег <span class="comm">"time"</span> имеет <span class="comm">обязательный</span> атрибут <span class="comm">"value"</span>, который содержит информацию о времени занятий.
+	  В свою очередь тег <span class="comm">"time"</span> содержит теги <span class="comm">"day"</span>.
+	  Тег <span class="comm">"day"</span> имеет следующие атрибуты:
+	</p>
+	<ol>
+	  <li><span class="comm">"value" - обязательный</span> атрибут, который хранит наименование дня недели;</li>
+	  <li><span class="comm">"num" - обязательный</span> атрибут, который хранит номер дня недели.</li>
+	</ol>
+	<p>Номера дней недели:</p>
+	<ul>
+	  <li>1 - Понедельник;</li>
+	  <li>2 - Вторник;</li>
+	  <li>3 - Среда;</li>
+	  <li>4 - Четверг;</li>
+	  <li>5 - Пятница;</li>
+	  <li>6 - Суббота;</li>
+	  <li>0 - Воскресенье.</li>
+	</ul>
+	<p>
+	  В свою очередь тег <span class="comm">"day"</span> содержит теги <span class="comm">"subject"</span>.
+	  Тег <span class="comm">"subject"</span> имеет следующие атрибуты:
+	</p>
+	<ol>
+	  <li><span class="comm">"value" - обязательный</span> атрибут, который хранит название предмета;</li>
+	  <li><span class="comm">"teacher" - необязательный</span> атрибут, который хранит ФИО преподавателя;</li>
+	  <li><span class="comm">"comment" - необязательный</span> атрибут, который хранит дополнительную информацию.</li>
+	</ol>
+	<p>
+	  В свою очередь тег <span class="comm">"subject"</span> содержит теги <span class="comm">"classroom"</span>.
+	  Тег <span class="comm">"classroom"</span> имеет <span class="comm">обязательный</span> атрибут <span class="comm">"value"</span>, который содержит информацию об аудитории (текст).
+	  В свою очередь тег <span class="comm">"classroom"</span> содержит теги <span class="comm">"lesson" (одиночный)</span>.
+	  Тег <span class="comm">"lesson"</span> имеет следующие атрибуты:
+	</p>
+	<ol>
+	  <li><span class="comm">"type" - обязательный</span> атрибут, который хранит тип проводимого занятия (текст);</li>
+	  <li><span class="comm">"weeks" - обязательный</span> атрибут, который хранит описание о номерах неделей в которые проводятся занятия (текст);</li>
+	  <li>
+		<span class="comm">"exp" - необязательный</span> атрибут, который хранит условие возвращающее правду в номера неделей, в которые проводятся занятия.
+	    В качестве переменной со значением номера недели выступает любой набор символов начинающийся с A-Z, a-z и нижнее подчеркивание, а последующие символы A-Z, a-z, 0-9 и нижнее подчеркивание.
+	    Операции взяты из JavaScript. <span class="comm">При неиспользовании тега "exp" необходимо в теге "weeks" перечислить все недели через разделитель (любой).</span>
+	  </li>
+	  <li><span class="comm">"teacher" - необязательный</span> атрибут, который хранит ФИО преподавателя;</li>
+	  <li><span class="comm">"comment" - необязательный</span> атрибут, который хранит дополнительную информацию.</li>
+	</ol>
+	
+  </body>
+</html>

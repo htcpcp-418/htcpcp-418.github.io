@@ -1,0 +1,42 @@
+body
+{
+  font-size: 14pt;
+}
+
+.r90 span, .r90
+{
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+}
+
+.r90:not(.tm)
+{
+  min-width: 2.4em;
+}
+
+td
+{
+  text-align: center;
+}
+
+.emp
+{
+  background-color: #808080;
+}
+
+.tm
+{
+  white-space: nowrap;
+  min-width: 1.2em;
+}
+
+button
+{
+  width: 100%;
+}
+
+.teach, .comm
+{
+  font-weight: bold;
+}
